@@ -65,16 +65,16 @@ while HP > 0:
         update_display_restpart_word(guess)     # revealed the letter in the unfinished answer
                                                 # cover the right letter position has been guessed
         print("correct")
+        if "_" not in display_word:  # If the all letters in the answer have all revealed, the game is declared won
+            print("YOU WIN, GAME SUCCESS. the answer is: ", answerword)
+            break
 
     else:                                       #If entering a wrong letter that you have not guessed
         HP -= 1                                 #hp - 1 , and add the letter to the list of wrong letters
         tried_letter.append(guess)
         print(f"wrong guess, HP - 1, now HP = ", HP)
-        continue
 
-    if "_" not in display_word:                 #If the all letters in the answer have all revealed, the game is declared won
-        print("YOU WIN, GAME SUCCESS. the answer is: ",answerword)
-        break
+        if HP < 1:  # If HP goes to zero, the game is declared lost
+            print("HP RUN OUT, GAME OVER.")
 
-if HP < 1:                                      #If HP goes to zero, the game is declared lost
-    print("HP RUN OUT, GAME OVER.")
+
