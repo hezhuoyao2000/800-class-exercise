@@ -1,5 +1,5 @@
 # 800-class-exercise
-exercise for Mr.Wang, 800 Professional Software Engineering
+exercise for 800 Professional Software Engineering
 
 1.  problem 1,2 is exercise in week 1, including (1) __a problem about sum and product of two numbers__ and (2) __BMI calculator__
 2.  week2(a)-18.11.2024 : (1) __Temperature converter__
