@@ -10,5 +10,4 @@ print(factorial(5))
 
 factorial_lambda = lambda n: 1 if n == 1 else n * factorial_lambda(n - 1)
 
-
 print(factorial_lambda(5))
